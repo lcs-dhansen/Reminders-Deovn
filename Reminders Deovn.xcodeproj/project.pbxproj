@@ -17,6 +17,10 @@
 		0F297C9C2603865800CEC7A7 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297C9B2603865800CEC7A7 /* TaskPriority.swift */; };
 		0F297CA0260386B500CEC7A7 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297C9F260386B500CEC7A7 /* TaskStore.swift */; };
 		0F297CAE26038FE100CEC7A7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297CAD26038FE100CEC7A7 /* TaskCell.swift */; };
+		0F297CB52603916100CEC7A7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297C972603861100CEC7A7 /* Task.swift */; };
+		0F297CB82603916700CEC7A7 /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297C9F260386B500CEC7A7 /* TaskStore.swift */; };
+		0F297CBB2603916A00CEC7A7 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297C9B2603865800CEC7A7 /* TaskPriority.swift */; };
+		0F297CBE2603916E00CEC7A7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297CAD26038FE100CEC7A7 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F297CBE2603916E00CEC7A7 /* TaskCell.swift in Sources */,
+				0F297CBB2603916A00CEC7A7 /* TaskPriority.swift in Sources */,
+				0F297CB82603916700CEC7A7 /* TaskStore.swift in Sources */,
 				0F297C86260385B700CEC7A7 /* ContentView.swift in Sources */,
 				0F297C84260385B700CEC7A7 /* Reminders_DeovnApp.swift in Sources */,
+				0F297CB52603916100CEC7A7 /* Task.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

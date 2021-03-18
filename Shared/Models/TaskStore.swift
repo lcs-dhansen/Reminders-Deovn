@@ -11,8 +11,8 @@ class TaskStore: ObservableObject {
     @Published var tasks: [Task]
     
     init(tasks: [Task] = []) {
-        self.task = tasks
+        self.tasks = tasks
     }
 }
 
-let testScore = TaskStore(tasks: testData)
+let testStore = TaskStore(tasks: testData)
