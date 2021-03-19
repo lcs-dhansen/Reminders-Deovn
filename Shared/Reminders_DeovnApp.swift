@@ -14,7 +14,10 @@ struct Reminders_DeovnApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(store: store)
+            NavigationView  {
+                ContentView(store: store)
+         
+            }
         }
     }
 }
