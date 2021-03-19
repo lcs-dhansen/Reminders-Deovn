@@ -23,6 +23,8 @@
 		0F297CBE2603916E00CEC7A7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F297CAD26038FE100CEC7A7 /* TaskCell.swift */; };
 		0FFD6F7A2604FA5D00CEA5DB /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD6F792604FA5D00CEA5DB /* AddTask.swift */; };
 		0FFD6F7B2604FA5D00CEA5DB /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD6F792604FA5D00CEA5DB /* AddTask.swift */; };
+		0FFD6F832605023300CEA5DB /* GoalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD6F822605023300CEA5DB /* GoalValue.swift */; };
+		0FFD6F842605023300CEA5DB /* GoalValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFD6F822605023300CEA5DB /* GoalValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,7 @@
 		0F297C9F260386B500CEC7A7 /* TaskStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 		0F297CAD26038FE100CEC7A7 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		0FFD6F792604FA5D00CEA5DB /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		0FFD6F822605023300CEA5DB /* GoalValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,7 @@
 			children = (
 				0F297C972603861100CEC7A7 /* Task.swift */,
 				0F297C9B2603865800CEC7A7 /* TaskPriority.swift */,
+				0FFD6F822605023300CEA5DB /* GoalValue.swift */,
 				0F297C9F260386B500CEC7A7 /* TaskStore.swift */,
 			);
 			path = Models;
@@ -225,6 +229,7 @@
 			files = (
 				0F297CA0260386B500CEC7A7 /* TaskStore.swift in Sources */,
 				0F297C85260385B700CEC7A7 /* ContentView.swift in Sources */,
+				0FFD6F832605023300CEA5DB /* GoalValue.swift in Sources */,
 				0F297C982603861100CEC7A7 /* Task.swift in Sources */,
 				0F297C9C2603865800CEC7A7 /* TaskPriority.swift in Sources */,
 				0F297CAE26038FE100CEC7A7 /* TaskCell.swift in Sources */,
@@ -239,6 +244,7 @@
 			files = (
 				0F297CBE2603916E00CEC7A7 /* TaskCell.swift in Sources */,
 				0F297CBB2603916A00CEC7A7 /* TaskPriority.swift in Sources */,
+				0FFD6F842605023300CEA5DB /* GoalValue.swift in Sources */,
 				0F297CB82603916700CEC7A7 /* TaskStore.swift in Sources */,
 				0F297C86260385B700CEC7A7 /* ContentView.swift in Sources */,
 				0F297C84260385B700CEC7A7 /* Reminders_DeovnApp.swift in Sources */,

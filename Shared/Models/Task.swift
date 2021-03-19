@@ -10,12 +10,14 @@ import Foundation
 class Task: Identifiable, ObservableObject {
    
     var id = UUID()
+    var goalName: String
     var description: String
     var priority: TaskPriority
     @Published var completed: Bool
     
-    internal init(id: UUID = UUID(), description: String, priority: TaskPriority, completed: Bool) {
+    internal init(id: UUID = UUID(), goalName: String, description: String, priority: TaskPriority, completed: Bool) {
         self.id = id
+        self.goalName = goalName
         self.description = description
         self.priority = priority
         self.completed = completed
@@ -23,7 +25,7 @@ class Task: Identifiable, ObservableObject {
 }
 
 let testData = [
-    Task(description: "Do homwork", priority: .high, completed: true),
-    Task(description: "Finish First Aid", priority: .medium, completed: false),
-    Task(description: "Workout", priority: .low, completed: false),
+    Task(goalName: "Homework", description: "Do homwork", priority: .high, completed: true),
+    Task(goalName: "First Aid", description: "Finish First Aid", priority: .medium, completed: false),
+    Task(goalname: "WO", description: "Workout", priority: .low, completed: false),
 ]

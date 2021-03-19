@@ -11,10 +11,12 @@ struct AddTask: View {
     
     //Get a reference to the store of tasks (taskStore)
     @ObservedObject var store: TaskStore
-    
+   
+    @State private var goalName = ""
     @State private var description = ""
     @State private var priority = TaskPriority.low
-    
+    @State private var goalValue = GoalValue.one
+   
     
     //wether to show this view
     @Binding var showing: Bool
@@ -23,12 +25,21 @@ struct AddTask: View {
         NavigationView {
             VStack {
                 Form {
+                    TextField("Goal Name", text: $goalName)
+                    
                     TextField("Description", text: $description)
                     
                     Picker("Priority", selection: $priority) {
                         Text(TaskPriority.low.rawValue).tag(TaskPriority.low)
                         Text(TaskPriority.medium.rawValue).tag(TaskPriority.medium)
                         Text(TaskPriority.high.rawValue).tag(TaskPriority.high)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    
+                    Picker("Point Value", selection: $goalValue) {
+                        Text(GoalValue.one.rawValue).tag(GoalValue.one)
+                        Text(GoalValue.two.rawValue).tag(GoalValue.two)
+                        Text(GoalValue.three.rawValue).tag(GoalValue.three)
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
@@ -40,8 +51,19 @@ struct AddTask: View {
                         saveTask()
                     }
                 }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Back") {
+                        back()
+                    }
+                }
             }
+
         }
+    }
+    
+    //function allows back button to work
+    func back() {
+        showing = false
     }
     
     func saveTask() {
