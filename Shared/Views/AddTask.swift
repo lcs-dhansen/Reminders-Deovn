@@ -11,12 +11,12 @@ struct AddTask: View {
     
     //Get a reference to the store of tasks (taskStore)
     @ObservedObject var store: TaskStore
-   
+    
     @State private var goalName = ""
     @State private var description = ""
     @State private var priority = TaskPriority.low
     @State private var goalValue = GoalValue.one
-   
+    
     
     //wether to show this view
     @Binding var showing: Bool
@@ -37,9 +37,9 @@ struct AddTask: View {
                     .pickerStyle(SegmentedPickerStyle())
                     
                     Picker("Point Value", selection: $goalValue) {
-                        Text(GoalValue.one.rawValue).tag(GoalValue.one)
-                        Text(GoalValue.two.rawValue).tag(GoalValue.two)
-                        Text(GoalValue.three.rawValue).tag(GoalValue.three)
+                        Text(String(GoalValue.one.rawValue)).tag(GoalValue.one)
+                        Text(String(GoalValue.two.rawValue)).tag(GoalValue.two)
+                        Text(String(GoalValue.three.rawValue)).tag(GoalValue.three)
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
@@ -52,26 +52,26 @@ struct AddTask: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Button("Back") {
-                        back()
+                    Button("Cancel") {
+                        cancel()
                     }
                 }
             }
-
+            
         }
     }
     
     //function allows back button to work
-    func back() {
+    func cancel() {
         showing = false
     }
     
     func saveTask() {
         
         //add the task to the list of tasks
-        store.tasks.append(Task(description: description,
-                               priority: priority,
-                               completed: false))
+        store.tasks.append(Task(goalName: goalName, description: description,
+                                priority: priority,
+                                completed: false))
         
         //dismiss this view
         showing = false

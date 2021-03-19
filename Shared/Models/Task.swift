@@ -27,5 +27,5 @@ class Task: Identifiable, ObservableObject {
 let testData = [
     Task(goalName: "Homework", description: "Do homwork", priority: .high, completed: true),
     Task(goalName: "First Aid", description: "Finish First Aid", priority: .medium, completed: false),
-    Task(goalname: "WO", description: "Workout", priority: .low, completed: false),
+    Task(goalName: "WO", description: "Workout", priority: .low, completed: false),
 ]
